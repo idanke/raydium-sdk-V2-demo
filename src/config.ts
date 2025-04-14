@@ -7,7 +7,7 @@ export const owner: Keypair = Keypair.fromSecretKey(bs58.decode('<YOUR_WALLET_SE
 // export const connection = new Connection('<YOUR_RPC_URL>') //<YOUR_RPC_URL>
 export const connection = new Connection(clusterApiUrl('devnet')) //<YOUR_RPC_URL>
 export const txVersion = TxVersion.V0 // or TxVersion.LEGACY
-const cluster = 'mainnet' // 'mainnet' | 'devnet'
+const cluster = 'devnet' // 'mainnet' | 'devnet'
 
 let raydium: Raydium | undefined
 export const initSdk = async (params?: { loadToken?: boolean }) => {
